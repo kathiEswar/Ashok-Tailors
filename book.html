@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ashok Tailors - Expert formal wear stitching for professionals in Darsi" />
+    <meta name="author" content="Ashok Tailors" />
+    <title>Booking</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        scroll-behavior: smooth;
+      }
+      .form-input, .form-select {
+        width: 100%;
+        padding: 0.75rem;
+        background-color: #ffffff;
+        color: #111827;
+        border: 1px solid #ccc;
+        border-radius: 0.5rem;
+      }
+      .fade-up { opacity: 0; transform: translateY(20px); transition: all 0.6s ease-in-out; }
+      .fade-up.visible { opacity: 1; transform: translateY(0); }
+    </style>
+  </head>
+  <body class="bg-white text-gray-900">
+    <!-- Hero Section -->
+<section id="hero" class="px-6 pt-24 pb-20 bg-gray-50 text-center fade-up">
+  <div class="max-w-3xl mx-auto">
+    <h1 class="text-5xl font-extrabold text-gray-900 mb-4">Tailored Perfection for 30+ Years</h1>
+    <p class="text-lg text-gray-600 mb-6">We specialize in formal wear for working professionals. Trusted by thousands in Darsi since 1995.</p>
+    <a href="#book" class="inline-block bg-[#ffb400] text-black px-6 py-3 rounded-xl font-semibold hover:bg-[#e09a00] transition">Book Your Appointment</a>
+    <div class="bg-[#ffb400] text-white px-4 py-2 rounded-full inline-block text-sm font-semibold mt-6">
+      30+ Years of Experience
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="px-6 py-16 bg-white text-center fade-up">
+  <div class="max-w-3xl mx-auto">
+    <h2 class="text-3xl font-bold text-[#ffb400] mb-4">Why Ashok Tailors?</h2>
+    <p class="text-gray-700 text-lg leading-relaxed">
+      For over three decades, Ashok Tailors has been the trusted name for formal stitching in Darsi. Our experienced craftsmen bring unmatched quality, precision, and style to every shirt, pant, or blazer stitched. We understand the value of presentation — and we tailor it perfectly for you.
+    </p>
+    <p class="mt-4 text-gray-600">Tailoring isn’t just our profession — it's our passion passed down through generations.</p>
+  </div>
+</section>
+
+<!-- Happy Customers Section -->
+<section class="px-6 py-16 bg-[#ffb400] text-black text-center fade-up">
+  <div class="max-w-3xl mx-auto">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">Join Our Lakhs of Happy Customers</h2>
+    <p class="text-lg md:text-xl font-medium">
+      Trusted by over <span class="font-extrabold text-white">1,00,000+</span> satisfied clients across Darsi and nearby regions.
+    </p>
+    <div class="mt-6 text-sm text-gray-900">Experience the perfect fit tailored just for you.</div>
+  </div>
+</section>
+
+
+<!-- Booking Section -->
+    <section id="book" class="px-8 py-16 bg-gray-100 fade-up">
+      <div class="max-w-xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-[#ffb400] mb-6">Book Your Stitching</h2>
+        <form action="https://formsubmit.co/sivarajukathi4@gmail.com" method="POST" class="space-y-4">
+          <input type="text" name="name" placeholder="Your Name" required class="form-input" />
+          <input type="email" name="email" placeholder="Your Email" required class="form-input" />
+          <input type="text" name="phone" placeholder="Phone Number" class="form-input" />
+          <select name="service" required class="form-select">
+            <option value="">Select Service</option>
+            <option value="Shirt">Shirt</option>
+            <option value="Pant">Pant</option>
+          </select>
+          <input type="date" name="date" class="form-input" />
+          <button type="submit" class="bg-[#ffb400] text-black px-4 py-2 rounded-xl hover:bg-[#e09a00] w-full">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Existing content remains unchanged... -->
+
+    <!-- JavaScript Scroll and Sliders -->
+    <script>
+      const fadeElements = document.querySelectorAll('.fade-up');
+      const showOnScroll = () => {
+        const triggerBottom = window.innerHeight * 0.9;
+        fadeElements.forEach((el) => {
+          const boxTop = el.getBoundingClientRect().top;
+          if (boxTop < triggerBottom) el.classList.add('visible');
+        });
+      };
+      window.addEventListener('scroll', showOnScroll);
+      window.addEventListener('load', showOnScroll);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper', {
+        loop: true,
+        autoplay: { delay: 3000, disableOnInteraction: false },
+        effect: 'fade',
+      });
+    </script>
+  </body>
+</html>
